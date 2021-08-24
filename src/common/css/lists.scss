@@ -1,0 +1,126 @@
+   //商品列表
+   .main_lists {
+     ul {
+       margin: 0 r(20);
+       background: #f3f3f3;
+
+       li {
+         justify-content: space-between;
+         display: flex;
+         margin-top: r(10);
+         padding-top: r(14);
+
+         .shangp_left {
+           width: 36%;
+           height: r(260);
+           position: relative;
+
+           // 已抢完的图片
+           .qiangwan {
+             position: absolute;
+             width: r(110);
+             height: r(50);
+             top: r(16);
+
+             >img {
+               width: 100%;
+               height: 100%;
+               display: block;
+             }
+
+             >span {
+               position: absolute;
+               width: 100%;
+               font-size: r(26);
+               font-family: PingFang-SC-Medium;
+               font-weight: 500;
+               color: rgba(255, 255, 255, 1);
+               top: r(12);
+               text-align: center;
+             }
+           }
+
+           .spimg {
+             width: 100%;
+             height: 100%;
+             display: block;
+             overflow: hidden;
+           }
+         }
+
+         .shangp_right {
+           padding-top: r(7);
+           width: 62%;
+           height: r(260);
+           background: #fff;
+
+           >h5 {
+             width: 100%;
+             height: r(65);
+             font-size: r(30);
+             font-family: PingFang-SC-Regular;
+             font-weight: bold;
+             color: rgba(34, 34, 34, 1);
+           }
+
+           >p {
+             height: r(50);
+             line-height: r(50);
+
+             span {
+               width: r(99);
+               font-size: r(22);
+               font-family: PingFang-SC-Regular;
+               font-weight: bold;
+               color: rgba(255, 204, 137, 1);
+             }
+
+             span:nth-of-type(2) {
+               margin-left: r(32);
+               color: rgba(181, 181, 181, 1);
+             }
+           }
+
+           .a_price {
+             margin-top: r(40);
+             display: flex;
+             justify-content: space-between;
+
+             div:nth-of-type(1) {
+               p {
+                 height: r(21);
+                 font-size: r(22);
+                 font-family: PingFang-SC-Regular;
+                 font-weight: bold;
+                 color: rgba(181, 181, 181, 1);
+                 text-decoration: none;
+
+                 span {
+                   text-decoration: line-through;
+                   font-size: r(22);
+                 }
+               }
+
+               .a_pricepo {
+                 margin-bottom: r(10);
+                 height: r(23);
+                 font-size: r(24);
+                 color: rgba(255, 104, 44, 1);
+               }
+             }
+
+             .a_masq {
+               .mint-button--normal {
+                 width: r(168);
+                 height: r(66);
+                 background: linear-gradient(90deg,
+                     rgba(255, 107, 39, 1),
+                     rgba(255, 158, 32, 1));
+                 border-radius: r(33);
+               }
+             }
+           }
+         }
+       }
+     }
+   }
